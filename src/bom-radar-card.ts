@@ -712,7 +712,7 @@ export class BomRadarCard extends LitElement implements LovelaceCard {
       return 0;
     }
 
-    const clamped = Math.min(Math.max(numeric, 0), 60);
+    const clamped = Math.min(Math.max(numeric, 0), 90);
     return clamped;
   }
 

@@ -79,7 +79,7 @@ export class BomRadarCardEditor extends LitElement implements LovelaceCardEditor
       { name: 'restart_delay', selector: { number: { mode: 'box', min: 0, max: 10000, step: 10 } } },
       {
         name: 'overlay_transparency',
-        selector: { number: { mode: 'slider', min: 0, max: 60, step: 5, unit_of_measurement: '%' } },
+        selector: { number: { mode: 'slider', min: 0, max: 90, step: 5, unit_of_measurement: '%' } },
       },
     ];
 
@@ -259,7 +259,7 @@ private _computeHelper = (schema: { name: string }): string | undefined => {
     frame_count: 'How many frames in the loop',
     frame_delay: 'Delay between frames',
     restart_delay: 'Pause on the last frame before looping',
-    overlay_transparency: 'Reduce the radar fill opacity to reveal the map (0%–60%)',
+    overlay_transparency: 'Reduce the radar fill opacity to reveal the map (0%–90%)',
     show_recenter: 'Adds a control to jump back to your center and zoom',
   };
   return help[schema.name];
